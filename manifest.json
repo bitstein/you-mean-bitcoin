@@ -1,15 +1,13 @@
 {
+  "manifest_version": 2,
   "name": "You Mean Bitcoin",
   "version": "0.1",
-  "permissions": [
-    "tabs", "http://*/*"
-  ],
+  "description": "Replaces the text 'block chain technology' with 'Bitcoin'",
   "content_scripts": [
     {
-      "matches": ["http://*/*", "https://*/*"],
+      "matches": ["*://*/*"],
       "js": ["myscript.js"],
       "run_at": "document_end"
     }
-  ],
-  "manifest_version": 2
+  ]
 }
