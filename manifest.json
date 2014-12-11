@@ -1,0 +1,15 @@
+{
+  "name": "You Mean Bitcoin",
+  "version": "0.1",
+  "permissions": [
+    "tabs", "http://*/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["myscript.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "manifest_version": 2
+}
